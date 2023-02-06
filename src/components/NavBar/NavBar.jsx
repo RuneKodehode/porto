@@ -108,7 +108,7 @@ function NavBar() {
           rel="noreferrer noopener"
         >
           {" "}
-          <div>
+          <div className="btnDiv">
             <button className="navBtn">
               <svg
                 width="40"

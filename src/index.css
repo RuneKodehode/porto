@@ -106,6 +106,7 @@ iframe {
   width: 70px;
   height: 40px;
   justify-self: flex-start;
+  align-self: center;
   margin: 2px;
   background-color: white;
   border: 1px solid black;
@@ -152,6 +153,9 @@ iframe {
   transform: translateY(10px);
 }
 @media only screen and (max-width: 1200px) {
+  body {
+    margin: 0px;
+  }
   #header {
     grid-template-rows: [one] 24% [two] 50% [three] 10%;
   }
@@ -161,7 +165,7 @@ iframe {
   .pitch {
     font-size: 0.875rem;
     width: 90vw;
-    padding: 4px;
+    margin-left: -8px;
     grid-row: two;
     grid-column: col-one / span 3;
   }
