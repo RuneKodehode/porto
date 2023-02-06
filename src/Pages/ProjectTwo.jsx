@@ -1,7 +1,8 @@
 export const ProjectTwo = () => {
   return (
-    <div className="p2">
-      <iframe src="" frameborder="0"></iframe>
-    </div>
+    <iframe
+      src="https://runekodehode.github.io/Pokedex/"
+      frameBorder="0"
+    ></iframe>
   );
 };

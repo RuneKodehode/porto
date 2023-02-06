@@ -83,7 +83,7 @@ function NavBar() {
               setShowProjTwo(!showProjTwo);
             }}
           >
-            proj-2
+            Pokedex
           </button>
         )}
         {showProjTwo && showNav && (
@@ -92,7 +92,7 @@ function NavBar() {
               <button className="about navBtn">About</button>
             </Link>
             <a
-              href="https://github.com/RuneKodehode/Portfolio"
+              href="https://github.com/RuneKodehode/Pokedex"
               target="_blank"
               rel="noreferrer noopener"
             >

@@ -6,6 +6,9 @@ body {
   margin: 0px;
   background-color: #fff0f3;
 }
+iframe {
+  overflow-x: hidden;
+}
 .pitch {
   justify-self: center;
   align-self: center;
@@ -165,9 +168,12 @@ iframe {
   .pitch {
     font-size: 0.875rem;
     width: 90vw;
+    height: 50vh;
     margin-left: -8px;
     grid-row: two;
     grid-column: col-one / span 3;
+  }
+  iframe {
   }
   #navId {
     flex-direction: row;
