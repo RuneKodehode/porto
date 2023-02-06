@@ -3,6 +3,8 @@ import { Icons } from "./components/Icons/Icons.jsx";
 import { Home } from "./Pages/Home";
 import { ProjectOne } from "./Pages/ProjectOne";
 import { ProjectTwo } from "./Pages/ProjectTwo";
+import { AboutProjOne } from "./Pages/AboutProjOne.jsx";
+import { AboutProjTwo } from "./Pages/AboutProjTwo.jsx";
 import { Rune } from "./components/svg/rune.jsx";
 import { Contact } from "./Pages/Contact.jsx";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,6 +21,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/ProjectOne" element={<ProjectOne />} />
               <Route path="/ProjectTwo" element={<ProjectTwo />} />
+              <Route path="/AboutProjOne" element={<AboutProjOne />} />
+              <Route path="/AboutProjTwo" element={<AboutProjTwo />} />
               <Route path="/Contact" element={<Contact />} />
               <Route
                 path="*"

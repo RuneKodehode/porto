@@ -47,18 +47,19 @@ function NavBar() {
           </svg>
         </button>
       </div>
-
       <div className="btnDiv">
         {showNav && (
-          <button
-            id="projectOne"
-            className="navBtn "
-            onClick={() => {
-              setShowProj(!showProj);
-            }}
-          >
-            Parallax
-          </button>
+          <Link to="/AboutProjOne">
+            <button
+              id="projectOne"
+              className="navBtn "
+              onClick={() => {
+                setShowProj(!showProj);
+              }}
+            >
+              Parallax
+            </button>
+          </Link>
         )}
         {showProj && showNav && (
           <div className="btnDiv">
@@ -77,14 +78,16 @@ function NavBar() {
       </div>
       <div className="btnDiv">
         {showNav && (
-          <button
-            className="navBtn "
-            onClick={() => {
-              setShowProjTwo(!showProjTwo);
-            }}
-          >
-            Pokedex
-          </button>
+          <Link to="/AboutProjTwo">
+            <button
+              className="navBtn "
+              onClick={() => {
+                setShowProjTwo(!showProjTwo);
+              }}
+            >
+              Pokedex
+            </button>
+          </Link>
         )}
         {showProjTwo && showNav && (
           <div className="btnDiv">
