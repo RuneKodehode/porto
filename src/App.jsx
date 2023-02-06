@@ -13,7 +13,6 @@ function App() {
       <Router>
         <div id="header">
           <Rune />
-
           <NavBar />
           <div className="pitch">
             <Routes>
