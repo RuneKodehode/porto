@@ -57,16 +57,16 @@ function NavBar() {
               setShowProj(!showProj);
             }}
           >
-            Project One
+            Parallax
           </button>
         )}
         {showProj && showNav && (
           <div className="btnDiv">
             <Link to="/ProjectOne">
-              <button className="about navBtn">About</button>
+              <button className="about navBtn">Show</button>
             </Link>
             <a
-              href="https://mkrtube.com/credits.html"
+              href="https://github.com/RuneKodehode/Parallax"
               target="_blank"
               rel="noreferrer noopener"
             >
