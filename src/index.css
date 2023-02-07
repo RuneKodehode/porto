@@ -1,22 +1,16 @@
 body {
   font-family: "Cinzel", serif;
-  color: #ffffff;
+  color: #000000;
   margin: 0px;
-  background-image: url(./components/svg/bg.png);
+  background-image: url(./components/svg/bg2.webp);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   margin-top: 20px;
 }
 iframe {
-  justify-self: center;
-  align-self: center;
-  grid-column: col-two;
-  grid-row: two;
   width: 60vw;
   height: 55vh;
-  border-radius: 10px;
-  margin-bottom: -10px;
 }
 .pitch {
   justify-self: center;
@@ -26,8 +20,8 @@ iframe {
   grid-column: col-two;
   grid-row: two;
   text-align: center;
-  text-shadow: 0px 0px 5px black;
-  width: 50vw;
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
+  width: 60vw;
   height: 45vh;
 }
 h1 {
@@ -60,7 +54,7 @@ h1 {
 .rune {
   animation: 1.5s spin ease-in;
   width: auto;
-  text-shadow: 3px 3px 12px #ff758f;
+  text-shadow: 3px 3px 12px #ffffff;
 }
 @keyframes spin {
   0% {
@@ -84,7 +78,7 @@ h1 {
   display: grid;
   height: 100vh;
   width: 100vw;
-  grid-template-columns: [col-one] 25% [col-two] 52% [col-three] 25%;
+  grid-template-columns: [col-one] 25% [col-two] 50% [col-three] 25%;
   grid-template-rows: [one] 200px [two] 500px [three] auto;
 }
 
@@ -100,9 +94,8 @@ h1 {
 }
 .navBtn {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   background-color: rgb(37, 36, 36);
-  border-radius: 4px;
   transition: 0.1s;
   width: 70px;
   height: 40px;
@@ -165,12 +158,10 @@ h1 {
   }
   .pitch {
     font-size: 0.875rem;
-    width: 90vw;
+    width: 95vw;
     height: 50vh;
-    margin-left: -8px;
     grid-row: two;
     grid-column: col-one / span 3;
-    margin-top: 0px;
   }
 
   #navId {
