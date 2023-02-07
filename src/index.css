@@ -154,7 +154,7 @@ h1 {
     grid-template-rows: [one] 24% [two] 50% [three] 10%;
   }
   h1 {
-    font-size: 20px;
+    font-size: 34px;
   }
   .pitch {
     font-size: 0.875rem;
@@ -168,7 +168,7 @@ h1 {
     flex-direction: row;
     grid-row: three;
     grid-column: col-two;
-    margin-top: 100px;
+    margin-top: 80px;
   }
   .btnDiv {
     flex-direction: column;
@@ -189,7 +189,7 @@ h1 {
     text-align: center;
   }
   #doodle {
-    margin-left: -100px;
+    margin-left: -60px;
     margin-bottom: 10px;
     margin-top: 10px;
   }
