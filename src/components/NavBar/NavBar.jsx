@@ -2,9 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 function NavBar() {
   const [showNav, setShowNav] = useState(false);
-  const [showProj, setShowProj] = useState(false);
-  const [showProjTwo, setShowProjTwo] = useState(false);
-
+  let [hideClose, setHideClose] = useState(undefined);
+  console.log(hideClose);
   return (
     <div id="navId">
       <Link to="/">
@@ -54,17 +53,17 @@ function NavBar() {
               id="projectOne"
               className="navBtn "
               onClick={() => {
-                setShowProj(!showProj);
+                setHideClose((hideClose = true));
               }}
             >
               Parallax
             </button>
           </Link>
         )}
-        {showProj && showNav && (
+        {showNav && hideClose && (
           <div className="btnDiv">
             <Link to="/ProjectOne">
-              <button className="about navBtn">Show</button>
+              <button className="about navBtn">iframe</button>
             </Link>
             <a
               href="https://github.com/RuneKodehode/Parallax"
@@ -82,17 +81,17 @@ function NavBar() {
             <button
               className="navBtn "
               onClick={() => {
-                setShowProjTwo(!showProjTwo);
+                setHideClose((hideClose = false));
               }}
             >
               Pokedex
             </button>
           </Link>
         )}
-        {showProjTwo && showNav && (
+        {showNav && hideClose === false && (
           <div className="btnDiv">
             <Link to="/ProjectTwo">
-              <button className="about navBtn">About</button>
+              <button className="about navBtn">iframe</button>
             </Link>
             <a
               href="https://github.com/RuneKodehode/Pokedex"
