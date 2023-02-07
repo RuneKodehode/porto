@@ -2,7 +2,7 @@ body {
   font-family: "Cinzel", serif;
   color: #ffffff;
   margin: 0px;
-  background-image: url(./components/svg/bg.jpg);
+  background-image: url(./components/svg/bg.png);
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
