@@ -1,13 +1,18 @@
 body {
   font-family: "Cinzel", serif;
   color: #000000;
-  overflow: scroll;
-  overflow-x: hidden;
   margin: 0px;
   background-color: #fff0f3;
 }
 iframe {
-  overflow-x: hidden;
+  justify-self: center;
+  align-self: center;
+  grid-column: col-two;
+  grid-row: two;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 10px;
+  margin-bottom: -10px;
 }
 .pitch {
   justify-self: center;
@@ -21,7 +26,7 @@ iframe {
   z-index: 1;
   border: 1px solid black;
   background-color: #ffccd5;
-  padding: 10px;
+  margin-top: 100px;
 }
 h1 {
   text-align: center;
@@ -80,14 +85,6 @@ h1 {
   grid-template-rows: [one] 200px [two] 500px [three] auto;
 }
 
-iframe {
-  justify-self: center;
-  align-self: center;
-  grid-column: col-two;
-  grid-row: two;
-  width: 700px;
-  height: 300px;
-}
 #navId {
   display: flex;
   flex-direction: column;
@@ -132,7 +129,7 @@ iframe {
 #icons {
   display: flex;
   justify-self: center;
-  align-self: top;
+  align-self: center;
   grid-column: col-two;
   grid-row: three;
   justify-content: space-between;
@@ -170,9 +167,9 @@ iframe {
     margin-left: -8px;
     grid-row: two;
     grid-column: col-one / span 3;
+    margin-top: 0px;
   }
-  iframe {
-  }
+
   #navId {
     flex-direction: row;
     grid-row: three;
