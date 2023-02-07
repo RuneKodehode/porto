@@ -12,6 +12,7 @@ iframe {
   width: 60vw;
   height: 55vh;
 }
+
 .pitch {
   justify-self: center;
   align-self: center;
@@ -20,7 +21,8 @@ iframe {
   grid-column: col-two;
   grid-row: two;
   text-align: center;
-  text-shadow: 0px 0px 15px rgb(255, 255, 255);
+  color: white;
+  text-shadow: 0px 2px 5px black;
   width: 60vw;
   height: 45vh;
 }
@@ -36,7 +38,6 @@ h1 {
   margin: 0;
   padding: 0;
 }
-
 .projects {
   text-align: center;
 }
@@ -54,7 +55,6 @@ h1 {
 .rune {
   animation: 1.5s spin ease-in;
   width: auto;
-  text-shadow: 3px 3px 12px #ffffff;
 }
 @keyframes spin {
   0% {
@@ -79,7 +79,7 @@ h1 {
   height: 100vh;
   width: 100vw;
   grid-template-columns: [col-one] 25% [col-two] 50% [col-three] 25%;
-  grid-template-rows: [one] 200px [two] 500px [three] auto;
+  grid-template-rows: [one] 200px [two] auto [three] auto;
 }
 
 #navId {
