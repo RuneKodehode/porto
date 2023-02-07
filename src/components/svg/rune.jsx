@@ -2,7 +2,7 @@ import Doodle from "../../doodle";
 export const Rune = () => {
   return (
     <div className="portfolio">
-      <h1>Portfolio</h1>
+      <h1 className="rune">Portfolio</h1>
       <div id="doodle">
         <Doodle
           rule={`@grid: 10 / 4rem;

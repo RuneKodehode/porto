@@ -1,7 +1,7 @@
 export const AboutProjOne = () => {
   return (
     <div>
-      <h1>Parallax</h1>
+      <h2>Parallax</h2>
       <p>
         This is a parallax site about the Amazon rainforest I made with css,
         html, and javascript. the goal was primarily to figure out how to make

@@ -1,7 +1,7 @@
 export const Home = () => {
   return (
     <div>
-      <h1>Welcome</h1>
+      <h2>Welcome</h2>
       <br></br>
       <p className="projects">
         Hi, my name is Rune. <br></br>
