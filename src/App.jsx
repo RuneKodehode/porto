@@ -5,6 +5,8 @@ import { ProjectOne } from "./Pages/ProjectOne";
 import { ProjectTwo } from "./Pages/ProjectTwo";
 import { AboutProjOne } from "./Pages/AboutProjOne.jsx";
 import { AboutProjTwo } from "./Pages/AboutProjTwo.jsx";
+import { AboutBreakout } from "./Pages/AboutBreakout.jsx";
+import { Breakout } from "./Pages/Breakout.jsx";
 import { Rune } from "./components/svg/rune.jsx";
 import { Contact } from "./Pages/Contact.jsx";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
@@ -23,7 +25,9 @@ function App() {
               <Route path="/ProjectTwo" element={<ProjectTwo />} />
               <Route path="/AboutProjOne" element={<AboutProjOne />} />
               <Route path="/AboutProjTwo" element={<AboutProjTwo />} />
+              <Route path="/AboutBreakout" element={<AboutBreakout />} />
               <Route path="/Contact" element={<Contact />} />
+              <Route path="/Breakout" element={<Breakout />} />
               <Route
                 path="*"
                 element={
