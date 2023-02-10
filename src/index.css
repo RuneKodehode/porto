@@ -90,7 +90,6 @@ h1 {
   grid-column: col-one;
   grid-row: two;
   justify-self: center;
-  margin-top: 18%;
 }
 .navBtn {
   font-size: 14px;
@@ -169,7 +168,8 @@ h1 {
     flex-direction: row;
     grid-row: three;
     grid-column: col-two;
-    margin-top: 80px;
+    justify-self: center;
+    align-self: flex-start;
   }
   .btnDiv {
     flex-direction: column;
