@@ -3,14 +3,14 @@ body {
   color: #000000;
   margin: 0px;
   background-image: url(./components/svg/bg2.webp);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  margin-top: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 iframe {
   width: 60vw;
   height: 55vh;
+  border-radius: 20px;
 }
 
 .pitch {
@@ -49,7 +49,7 @@ h1 {
   grid-row: one;
   grid-column: col-two;
   justify-self: center;
-  align-self: center;
+  align-self: flex-end;
   font-size: 30px;
 }
 .rune {
@@ -79,7 +79,7 @@ h1 {
   height: 100vh;
   width: 100vw;
   grid-template-columns: [col-one] 25% [col-two] 50% [col-three] 25%;
-  grid-template-rows: [one] 200px [two] auto [three] auto;
+  grid-template-rows: [one] 230px [two] auto [three] 30%;
 }
 
 #navId {
@@ -149,9 +149,10 @@ h1 {
 @media only screen and (max-width: 1250px) {
   body {
     margin: 0px;
+    padding: 0px;
   }
   #header {
-    grid-template-rows: [one] 24% [two] 50% [three] 10%;
+    grid-template-rows: [one] 18% [two] auto [three] auto;
   }
   h1 {
     font-size: 34px;
@@ -188,9 +189,7 @@ h1 {
     text-align: center;
   }
   #doodle {
-    margin-left: -60px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 0px 0px 0px 0px;
   }
   iframe {
     justify-self: center;
@@ -198,7 +197,7 @@ h1 {
     grid-column: col-two;
     grid-row: two;
     width: 100%;
-    height: 100%;
+    height: 60vh;
   }
   .flavourText {
     margin-top: 0px;

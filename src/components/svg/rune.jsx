@@ -5,14 +5,14 @@ export const Rune = () => {
       <h1 className="rune">Portfolio</h1>
       <div id="doodle">
         <Doodle
-          rule={`@grid: 10 / 4rem;
-            width: 30px; 
+          rule={`@grid: 10;
+            width: 15px; 
             height: 5px;
             background-color: white;
             box-shadow: 5px 5px 20px lightblue;
-            animation: m 4s alternate-reverse infinite;
-            transform: translateX(calc(@sin(@i / 1) * π * 2px));
-           animation-delay: calc(
+            animation: m 5s alternate-reverse infinite;
+            transform: translateX(calc(@sin(@i / 1) * π * 4px));
+            animation-delay: calc(
              -1s/@I * @i * @sin(@i)
              );
              @keyframes m {
