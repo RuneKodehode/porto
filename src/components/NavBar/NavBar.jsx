@@ -9,7 +9,7 @@ function NavBar() {
     <div id="navId">
       <Link to="/">
         <div>
-          <button className="navBtn ">
+          <button aria-label="Home button" className="navBtn ">
             <svg width="30" height="30" viewBox="0 0 172 172" fill="none">
               <path
                 d="M92.1291 2.54313C91.3298 1.7373 90.3789 1.09769 89.3312 0.661208C88.2836 0.224724 87.1598 0 86.0248 0C84.8899 0 83.7661 0.224724 82.7185 0.661208C81.6708 1.09769 80.7199 1.7373 79.9206 2.54313L2.54313 79.9207C1.7373 80.7199 1.09769 81.6708 0.661207 82.7185C0.224724 83.7662 0 84.89 0 86.0249C0 87.1599 0.224724 88.2836 0.661207 89.3313C1.09769 90.379 1.7373 91.3299 2.54313 92.1292C3.34648 92.926 4.29922 93.5564 5.34671 93.9842C6.39421 94.4121 7.51586 94.629 8.64735 94.6224H17.2449V154.805C17.2449 159.365 19.0565 163.739 22.2811 166.964C25.5058 170.188 29.8795 172 34.4399 172H137.61C142.17 172 146.544 170.188 149.769 166.964C152.993 163.739 154.805 159.365 154.805 154.805V94.6224H163.402C165.683 94.6224 167.869 93.7166 169.482 92.1043C171.094 90.4919 172 88.3051 172 86.0249C172.006 84.8934 171.79 83.7718 171.362 82.7243C170.934 81.6768 170.303 80.724 169.507 79.9207L92.1291 2.54313ZM34.4399 154.805V72.3549L86.0248 20.7698L137.61 72.3549V154.805H34.4399Z"
@@ -22,17 +22,12 @@ function NavBar() {
       <button
         to="/menu"
         className="navBtn"
+        aria-label="open or close the navigation menu"
         onClick={() => {
           setShowNav(!showNav);
         }}
       >
-        <svg
-          width="25"
-          height="25"
-          viewBox="0 0 139 93"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="25" height="25" viewBox="0 0 139 93" fill="none">
           <path
             d="M7.72222 93H131.278C135.525 93 139 89.5125 139 85.25C139 80.9875 135.525 77.5 131.278 77.5H7.72222C3.475 77.5 0 80.9875 0 85.25C0 89.5125 3.475 93 7.72222 93ZM7.72222 54.25H131.278C135.525 54.25 139 50.7625 139 46.5C139 42.2375 135.525 38.75 131.278 38.75H7.72222C3.475 38.75 0 42.2375 0 46.5C0 50.7625 3.475 54.25 7.72222 54.25ZM0 7.75C0 12.0125 3.475 15.5 7.72222 15.5H131.278C135.525 15.5 139 12.0125 139 7.75C139 3.4875 135.525 0 131.278 0H7.72222C3.475 0 0 3.4875 0 7.75Z"
             fill="white"
@@ -43,6 +38,7 @@ function NavBar() {
         {showNav && (
           <Link to="/AboutProjOne">
             <button
+              aria-label="Parallax text button"
               id="projectOne"
               className="navBtn "
               onClick={() => {
@@ -54,7 +50,7 @@ function NavBar() {
           </Link>
         )}
         {showNav && hideClose === 1 && (
-          <div className="btnDiv">
+          <div aria-label="Show Parallax website" className="btnDiv">
             <Link to="/ProjectOne">
               <button className="about navBtn">Show</button>
             </Link>
@@ -63,7 +59,12 @@ function NavBar() {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <button className=" navBtn">Github</button>
+              <button
+                aria-label="Button to Parallax Github"
+                className=" navBtn"
+              >
+                Github
+              </button>
             </a>
           </div>
         )}
@@ -72,6 +73,7 @@ function NavBar() {
         {showNav && (
           <Link to="/AboutProjTwo">
             <button
+              aria-label="Pokedex text button"
               className="navBtn "
               onClick={() => {
                 setHideClose(2);
@@ -84,14 +86,18 @@ function NavBar() {
         {showNav && hideClose === 2 && (
           <div className="btnDiv">
             <Link to="/ProjectTwo">
-              <button className="about navBtn">Show</button>
+              <button aria-label="show Pokedex" className="about navBtn">
+                Show
+              </button>
             </Link>
             <a
               href="https://github.com/RuneKodehode/Pokedex"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <button className=" navBtn">GitHub</button>
+              <button aria-label="Link to Pokedex Github" className=" navBtn">
+                GitHub
+              </button>
             </a>
           </div>
         )}
@@ -100,6 +106,7 @@ function NavBar() {
         {showNav && (
           <Link to="/AboutBreakout">
             <button
+              aria-label="Button to show Breakout text"
               id="projectOne"
               className="navBtn "
               onClick={() => {
@@ -113,14 +120,24 @@ function NavBar() {
         {showNav && hideClose === 3 && (
           <div className="btnDiv">
             <Link to="/Breakout">
-              <button className="about navBtn">Play</button>
+              <button
+                aria-label="Button to Play Breakout"
+                className="about navBtn"
+              >
+                Play
+              </button>
             </Link>
             <a
               href="https://github.com/RuneKodehode/breakout"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <button className=" navBtn">Github</button>
+              <button
+                aria-label="Button to Breakout Github link"
+                className=" navBtn"
+              >
+                Github
+              </button>
             </a>
           </div>
         )}
@@ -133,7 +150,10 @@ function NavBar() {
         >
           {" "}
           <div className="btnDiv">
-            <button className="navBtn">
+            <button
+              aria-label="Button to Rune's Github repository"
+              className="navBtn"
+            >
               <svg width="40" height="40" viewBox="0 0 512 512" fill="none">
                 <circle cx="256" cy="272" r="219" fill="#756E6E" />
                 <path
@@ -160,7 +180,9 @@ function NavBar() {
       )}
       {showNav && (
         <Link to="/Contact">
-          <button className=" navBtn">Contact</button>
+          <button aria-label="Contact information button" className=" navBtn">
+            Contact
+          </button>
         </Link>
       )}
     </div>
