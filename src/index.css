@@ -12,7 +12,9 @@ iframe {
   height: 55vh;
   border-radius: 20px;
 }
-
+h2 {
+  text-align: center;
+}
 .pitch {
   justify-self: center;
   align-self: center;
@@ -148,6 +150,9 @@ h1 {
 .icon:hover {
   cursor: pointer;
   transform: translateY(10px);
+}
+#contact {
+  margin-top: 100px;
 }
 @media only screen and (max-width: 1250px) {
   body {

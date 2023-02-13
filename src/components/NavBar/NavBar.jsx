@@ -56,14 +56,14 @@ function NavBar() {
         {showNav && hideClose === 1 && (
           <div className="btnDiv">
             <Link to="/ProjectOne">
-              <button className="about navBtn">iframe</button>
+              <button className="about navBtn">Show</button>
             </Link>
             <a
               href="https://github.com/RuneKodehode/Parallax"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <button className=" navBtn">Link</button>
+              <button className=" navBtn">Github</button>
             </a>
           </div>
         )}
@@ -84,7 +84,7 @@ function NavBar() {
         {showNav && hideClose === 2 && (
           <div className="btnDiv">
             <Link to="/ProjectTwo">
-              <button className="about navBtn">iframe</button>
+              <button className="about navBtn">Show</button>
             </Link>
             <a
               href="https://github.com/RuneKodehode/Pokedex"
@@ -106,21 +106,21 @@ function NavBar() {
                 setHideClose(3);
               }}
             >
-              about breakout
+              Breakout
             </button>
           </Link>
         )}
         {showNav && hideClose === 3 && (
           <div className="btnDiv">
             <Link to="/Breakout">
-              <button className="about navBtn">Breakout</button>
+              <button className="about navBtn">Play</button>
             </Link>
             <a
               href="https://github.com/RuneKodehode/breakout"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <button className=" navBtn">Link</button>
+              <button className=" navBtn">Github</button>
             </a>
           </div>
         )}
