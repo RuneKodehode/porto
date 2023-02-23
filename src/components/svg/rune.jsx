@@ -8,13 +8,14 @@ export const Rune = () => {
           rule={`@grid: 10;
             width: 15px; 
             height: 5px;
-            background-color: white;
+            background-color: cyan;
             box-shadow: 5px 5px 20px lightblue;
             animation: m 5s alternate-reverse infinite;
             transform: translateX(calc(@sin(@i / 1) * π * 4px));
             animation-delay: calc(
              -1s/@I * @i * @sin(@i)
              );
+             
              @keyframes m {
                10%, 20%, 100% { scale: 1; opacity: 1}
               10%, 70%, 50% { scale: 0; opacity: 0 }`}
