@@ -36,7 +36,7 @@ function NavBar() {
       </button>
       <div className="btnDiv">
         {showNav && (
-          <Link to="/AboutProjOne">
+          <Link to="/ProjectOne">
             <button
               aria-label="Parallax text button"
               id="projectOne"
@@ -51,8 +51,8 @@ function NavBar() {
         )}
         {showNav && hideClose === 1 && (
           <div aria-label="Show Parallax website" className="btnDiv">
-            <Link to="/ProjectOne">
-              <button className="about navBtn">Show</button>
+            <Link to="/AboutProjOne">
+              <button className="about navBtn">Info</button>
             </Link>
             <a
               href="https://github.com/RuneKodehode/Parallax"
@@ -71,7 +71,7 @@ function NavBar() {
       </div>
       <div className="btnDiv">
         {showNav && (
-          <Link to="/AboutProjTwo">
+          <Link to="/ProjectTwo">
             <button
               aria-label="Pokedex text button"
               className="navBtn "
@@ -85,9 +85,9 @@ function NavBar() {
         )}
         {showNav && hideClose === 2 && (
           <div className="btnDiv">
-            <Link to="/ProjectTwo">
+            <Link to="/AboutProjTwo">
               <button aria-label="show Pokedex" className="about navBtn">
-                Show
+                Info
               </button>
             </Link>
             <a
@@ -104,7 +104,7 @@ function NavBar() {
       </div>
       <div className="btnDiv">
         {showNav && (
-          <Link to="/AboutBreakout">
+          <Link to="/Breakout">
             <button
               aria-label="Button to show Breakout text"
               id="projectOne"
@@ -119,12 +119,12 @@ function NavBar() {
         )}
         {showNav && hideClose === 3 && (
           <div className="btnDiv">
-            <Link to="/Breakout">
+            <Link to="/AboutBreakout">
               <button
                 aria-label="Button to Play Breakout"
                 className="about navBtn"
               >
-                Play
+                Info
               </button>
             </Link>
             <a
