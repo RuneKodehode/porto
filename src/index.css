@@ -113,6 +113,10 @@ h1 {
   border: 1px solid white;
 }
 
+.navBtn:focus {
+  background-color: rgb(26, 8, 8);
+}
+
 .btnDiv {
   display: flex;
   align-items: row;
