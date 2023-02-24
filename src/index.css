@@ -14,6 +14,9 @@ iframe {
 }
 h2 {
   text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+  text-decoration: underline;
 }
 .pitch {
   justify-self: center;
@@ -45,7 +48,8 @@ h1 {
   text-align: left;
   margin: 0 180px;
   line-height: 1.4;
-  font-weight: 500;
+  font-weight: 300;
+  font-size: 25px;
 }
 .p2 {
   padding: 40px;
@@ -75,7 +79,6 @@ h1 {
   grid-column: col-one;
   grid-row: two;
   justify-self: center;
-  margin: 20px;
 }
 
 .navBtn {
@@ -84,13 +87,14 @@ h1 {
   height: 50px;
   justify-self: flex-start;
   align-self: center;
-  margin: 2px;
   color: rgb(0, 0, 0);
-  border: 2px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 3px;
+  transition: 0.2s;
 }
 .navBtn:focus {
-  background-color: rgb(5, 189, 137);
+  background-color: grey;
+  color: white;
 }
 .btnDiv {
   display: flex;
@@ -104,7 +108,7 @@ h1 {
   border: 2px solid black;
 }
 .navBtn:active {
-  transform: translateY(3px);
+  transform: translateX(5px);
 }
 #icons {
   display: flex;
@@ -144,6 +148,11 @@ h1 {
   h1 {
     font-size: 34px;
   }
+  h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    text-decoration: underline;
+  }
   .pitch {
     font-size: 0.875rem;
     width: 95vw;
@@ -158,16 +167,17 @@ h1 {
     grid-column: col-two;
     justify-self: center;
     align-self: flex-start;
+    margin-top: 30px;
   }
   .btnDiv {
     flex-direction: column;
     z-index: 2;
   }
   .navBtn {
-    font-size: 12px;
-    width: 49px;
-    height: 40px;
-    margin: 2px;
+    font-size: 10px;
+    font-weight: 300;
+    width: 53px;
+    height: 45px;
   }
   #icons {
     visibility: hidden;
@@ -181,8 +191,9 @@ h1 {
   }
   .projects {
     text-align: left;
-    margin: 0 30px;
-    line-height: 1.4;
+    font-size: 16px;
+    margin: 0px 30px;
+    line-height: 1.7;
     font-weight: 300;
   }
   iframe {
