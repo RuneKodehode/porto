@@ -15,14 +15,14 @@ iframe {
 h2 {
   text-align: center;
   margin-top: 50px;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-decoration: underline;
 }
 .pitch {
   justify-self: center;
   align-self: center;
   font-family: "Heebo";
-  font-size: 20px;
+  font-size: 1.25rem;
   grid-column: col-two;
   grid-row: two;
   text-align: center;
@@ -49,7 +49,7 @@ h1 {
   margin: 0 180px;
   line-height: 1.4;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 1.563rem;
 }
 .p2 {
   padding: 40px;
@@ -60,7 +60,7 @@ h1 {
   grid-column: col-two;
   justify-self: center;
   align-self: flex-end;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 #header {
@@ -82,7 +82,7 @@ h1 {
 }
 
 .navBtn {
-  font-size: 16px;
+  font-size: 1rem;
   width: 75px;
   height: 50px;
   justify-self: flex-start;
@@ -146,10 +146,10 @@ h1 {
     grid-template-rows: [one] 21% [two] auto [three] auto;
   }
   h1 {
-    font-size: 34px;
+    font-size: 2.125rem;
   }
   h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-top: 50px;
     text-decoration: underline;
   }
@@ -174,7 +174,7 @@ h1 {
     z-index: 2;
   }
   .navBtn {
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 300;
     width: 53px;
     height: 45px;
@@ -191,7 +191,7 @@ h1 {
   }
   .projects {
     text-align: left;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0px 30px;
     line-height: 1.7;
     font-weight: 300;
