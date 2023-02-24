@@ -146,7 +146,7 @@ h1 {
     grid-template-rows: [one] 21% [two] auto [three] auto;
   }
   h1 {
-    font-size: 2.125rem;
+    font-size: 2rem;
   }
   h2 {
     font-size: 1.875rem;
@@ -167,7 +167,7 @@ h1 {
     grid-column: col-two;
     justify-self: center;
     align-self: flex-start;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   .btnDiv {
     flex-direction: column;
@@ -177,7 +177,7 @@ h1 {
     font-size: 0.625rem;
     font-weight: 300;
     width: 53px;
-    height: 45px;
+    height: 40px;
   }
   #icons {
     visibility: hidden;
