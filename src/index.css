@@ -11,8 +11,11 @@ body {
 }
 iframe {
   width: 60vw;
-  height: 55vh;
+  height: 65vh;
   border-radius: 20px;
+}
+css-doodle {
+  width: 50vw;
 }
 h2 {
   color: orangered;
@@ -148,7 +151,9 @@ h1 {
     margin: 0px;
     padding: 0px;
   }
-
+  css-doodle {
+    width: 70vw;
+  }
   #header {
     grid-template-rows: [one] 21% [two] auto [three] auto;
   }
