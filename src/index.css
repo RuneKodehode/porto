@@ -2,10 +2,12 @@ body {
   font-family: "Cinzel", serif;
   color: orangered;
   margin: 0px;
-  background-image: url(./components/svg/bg3.jpg);
+  background-image: url(./components/svg/desert.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.493);
+  background-blend-mode: overlay;
 }
 iframe {
   width: 60vw;
