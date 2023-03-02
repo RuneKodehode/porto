@@ -5,19 +5,19 @@ export const Rune = () => {
       <h1 className="rune">Portfolio</h1>
       <div id="doodle">
         <Doodle
-          rule={`@grid: 12;
-            width: 15px; 
-            height: 5px;
+          rule={`@grid: 30;
+            width: 1.5px; 
+            height: 1px;
             background-color: orangered;
-            box-shadow: 5px 5px 20px orangered;
+  
             animation: m 5s alternate-reverse infinite;
-            transform: translateX(calc(@sin(@i / 1) * π * 20px));
+            transform: translateX(calc(@sin(@i / 1) * π * 12px));
             animation-delay: calc(
              -1s/@I * @i * @sin(@i)
              );
              @keyframes m {
-               10%, 20%, 100% { scale: 1; opacity: 1}
-              10%, 70%, 50% { scale: 0; opacity: 0 }`}
+               10%, 30%, 100% { scale: 1; opacity: 1}
+              10%, 60%, 50% { scale: 0; opacity: 0 }`}
         ></Doodle>{" "}
       </div>
       <h1 className="rune">Rune</h1>
