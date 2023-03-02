@@ -6,7 +6,11 @@ export const Home = () => {
       <br />
       <p className="projects">
         I`m a 33 year old front-end developer. <br /> Currently I'm well versed
-        in HTML, CSS, Javascript, Figma and React.
+        in <span style={{ color: "orangered" }}> HTML</span>,{" "}
+        <span style={{ color: "orangered" }}>CSS</span>,{" "}
+        <span style={{ color: "orangered" }}>Javascript</span>,{" "}
+        <span style={{ color: "orangered" }}>Figma</span> and
+        <span style={{ color: "orangered" }}> React.</span>
         <br />
         <br />
         My goal is to become a full-stack developer at some point.
