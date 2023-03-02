@@ -2,7 +2,7 @@ body {
   font-family: "Cinzel", serif;
   color: orangered;
   margin: 0px;
-  background-image: url(./components/svg/bgdesert.png);
+  background-image: url(./components/svg/bgdesert.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
