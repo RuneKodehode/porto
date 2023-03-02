@@ -17,8 +17,10 @@ export const Home = () => {
       </p>
       <br />
       <p className="projects">
-        About me, I've lived in Stavanger for about 10 years, and my hobbies
-        include reading books, watching football, DnD and PC-games.
+        About me, I've lived in{" "}
+        <span style={{ color: "orangered" }}> Stavanger</span> for about 10
+        years, and my hobbies include reading books, watching football,{" "}
+        <span style={{ color: "red" }}> D&D</span> and PC-games.
       </p>
     </div>
   );
