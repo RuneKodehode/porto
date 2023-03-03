@@ -15,7 +15,7 @@ function NavBar() {
           <button
             aria-label="Home button"
             className="navBtn "
-            style={{ rotate: "-45deg", margin: "0px 0px 0px 0px" }}
+            style={{ rotate: "-45deg", margin: "0px 0px 2px 0px" }}
           >
             <div style={{ rotate: "45deg" }}>
               <svg width="28" height="28" viewBox="0 0 172 172" fill="none">
