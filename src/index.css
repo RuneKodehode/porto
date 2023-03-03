@@ -76,7 +76,7 @@ h1 {
 }
 
 #navId {
-  margin-top: -100px;
+  margin-top: -20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +84,6 @@ h1 {
   grid-column: col-one;
   grid-row: two;
   justify-self: center;
-  gap: 22px;
 }
 
 .navBtn {
@@ -96,6 +95,7 @@ h1 {
   justify-self: flex-start;
   align-self: center;
   color: orangered;
+  margin: 20px 2px 20px 0px;
   border: 2px solid orangered;
 }
 .navBtn:focus {
@@ -179,6 +179,7 @@ h1 {
     align-self: flex-start;
     margin-top: 10px;
     gap: 15px;
+    transition: 0.2s;
   }
   .btnDiv {
     flex-direction: column;
@@ -189,6 +190,7 @@ h1 {
     font-weight: 600;
     width: 38px;
     height: 38px;
+    margin: 2px 0px 2px 5px;
   }
   #icons {
     visibility: hidden;
