@@ -84,10 +84,10 @@ h1 {
   grid-column: col-one;
   grid-row: two;
   justify-self: center;
+  gap: 22px;
 }
 
 .navBtn {
-  rotate: 45deg;
   background-color: black;
   font-size: 0.85rem;
   font-weight: 600;
@@ -97,9 +97,6 @@ h1 {
   align-self: center;
   color: orangered;
   border: 2px solid orangered;
-  margin-top: 20px;
-  margin-left: 11px;
-  margin-right: 11px;
 }
 .navBtn:focus {
   background-color: rgba(255, 68, 0, 0.412);
@@ -108,6 +105,7 @@ h1 {
 .btnDiv {
   display: flex;
   align-items: row;
+  rotate: 45deg;
 }
 .projBtn:hover {
   cursor: pointer;
@@ -180,19 +178,17 @@ h1 {
     justify-self: center;
     align-self: flex-start;
     margin-top: 10px;
+    gap: 15px;
   }
   .btnDiv {
     flex-direction: column;
-    z-index: 2;
   }
+
   .navBtn {
     font-size: 0.625rem;
     font-weight: 600;
-    width: 40px;
-    height: 40px;
-    margin-left: 7px;
-    margin-right: 7px;
-    margin-top: 14px;
+    width: 38px;
+    height: 38px;
   }
   #icons {
     visibility: hidden;

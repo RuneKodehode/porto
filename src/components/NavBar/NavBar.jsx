@@ -12,9 +12,13 @@ function NavBar() {
       {/* here we have a div with a <link> that navigates to the default homepage of the site. within the button you see an svg that represents a house on the button itself.  */}
       <Link to="/">
         <div>
-          <button aria-label="Home button" className="navBtn ">
-            <div style={{ rotate: "-45deg" }}>
-              <svg width="30" height="30" viewBox="0 0 172 172" fill="none">
+          <button
+            aria-label="Home button"
+            className="navBtn "
+            style={{ rotate: "-45deg" }}
+          >
+            <div style={{ rotate: "45deg" }}>
+              <svg width="28" height="28" viewBox="0 0 172 172" fill="none">
                 <path
                   d="M92.1291 2.54313C91.3298 1.7373 90.3789 1.09769 89.3312 0.661208C88.2836 0.224724 87.1598 0 86.0248 0C84.8899 0 83.7661 0.224724 82.7185 0.661208C81.6708 1.09769 80.7199 1.7373 79.9206 2.54313L2.54313 79.9207C1.7373 80.7199 1.09769 81.6708 0.661207 82.7185C0.224724 83.7662 0 84.89 0 86.0249C0 87.1599 0.224724 88.2836 0.661207 89.3313C1.09769 90.379 1.7373 91.3299 2.54313 92.1292C3.34648 92.926 4.29922 93.5564 5.34671 93.9842C6.39421 94.4121 7.51586 94.629 8.64735 94.6224H17.2449V154.805C17.2449 159.365 19.0565 163.739 22.2811 166.964C25.5058 170.188 29.8795 172 34.4399 172H137.61C142.17 172 146.544 170.188 149.769 166.964C152.993 163.739 154.805 159.365 154.805 154.805V94.6224H163.402C165.683 94.6224 167.869 93.7166 169.482 92.1043C171.094 90.4919 172 88.3051 172 86.0249C172.006 84.8934 171.79 83.7718 171.362 82.7243C170.934 81.6768 170.303 80.724 169.507 79.9207L92.1291 2.54313ZM34.4399 154.805V72.3549L86.0248 20.7698L137.61 72.3549V154.805H34.4399Z"
                   fill="orangered"
@@ -26,14 +30,21 @@ function NavBar() {
       </Link>
       <button
         to="/menu"
+        style={{ rotate: "-45deg" }}
         className="navBtn"
         aria-label="open or close the navigation menu"
         onClick={() => {
           setShowNav(!showNav);
         }}
       >
-        <div style={{ rotate: "-45deg" }}>
-          <svg width="25" height="25" viewBox="0 0 139 93" fill="none">
+        <div>
+          <svg
+            width="25"
+            height="25"
+            viewBox="0 0 139 93"
+            fill="none"
+            style={{ rotate: " 45deg" }}
+          >
             <path
               d="M7.72222 93H131.278C135.525 93 139 89.5125 139 85.25C139 80.9875 135.525 77.5 131.278 77.5H7.72222C3.475 77.5 0 80.9875 0 85.25C0 89.5125 3.475 93 7.72222 93ZM7.72222 54.25H131.278C135.525 54.25 139 50.7625 139 46.5C139 42.2375 135.525 38.75 131.278 38.75H7.72222C3.475 38.75 0 42.2375 0 46.5C0 50.7625 3.475 54.25 7.72222 54.25ZM0 7.75C0 12.0125 3.475 15.5 7.72222 15.5H131.278C135.525 15.5 139 12.0125 139 7.75C139 3.4875 135.525 0 131.278 0H7.72222C3.475 0 0 3.4875 0 7.75Z"
               fill="orangered"
@@ -57,7 +68,11 @@ function NavBar() {
           </Link>
         )}
         {showNav && hideClose === 1 && (
-          <div aria-label="Show Parallax website" className="btnDiv">
+          <div
+            aria-label="Show Parallax website"
+            className="btnDiv"
+            style={{ rotate: "0deg" }}
+          >
             <Link to="/AboutProjOne">
               <button className="about navBtn">
                 <div style={{ rotate: "-45deg" }}>Info</div>
@@ -90,8 +105,8 @@ function NavBar() {
             >
               <div style={{ rotate: "-45deg" }}>
                 <svg
-                  width="35"
-                  height="35"
+                  width="30"
+                  height="30"
                   viewBox="0 0 30 30"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +126,7 @@ function NavBar() {
           </Link>
         )}
         {showNav && hideClose === 2 && (
-          <div className="btnDiv">
+          <div className="btnDiv" style={{ rotate: "0deg" }}>
             <Link to="/AboutProjTwo">
               <button aria-label="show Pokedex" className="about navBtn">
                 <div style={{ rotate: "-45deg" }}>Info</div>
@@ -140,8 +155,9 @@ function NavBar() {
                 setHideClose(3);
               }}
             >
-              <div style={{ rotate: "-45deg" }}>
+              <div>
                 <svg
+                  style={{ rotate: "-45deg" }}
                   width="25"
                   height="26"
                   viewBox="0 0 25 26"
@@ -228,7 +244,7 @@ function NavBar() {
           </Link>
         )}
         {showNav && hideClose === 3 && (
-          <div className="btnDiv">
+          <div className="btnDiv" style={{ rotate: "0deg" }}>
             <Link to="/AboutBreakout">
               <button
                 aria-label="Button to Play Breakout"
@@ -284,9 +300,18 @@ function NavBar() {
       )}
       {showNav && (
         <Link to="/Contact">
-          <button aria-label="Contact information button" className=" navBtn">
-            <div style={{ rotate: "-45deg" }}>
-              <svg width="29" height="22" viewBox="0 0 29 22">
+          <button
+            aria-label="Contact information button"
+            className=" navBtn"
+            style={{ rotate: "-45deg" }}
+          >
+            <div>
+              <svg
+                width="29"
+                height="22"
+                viewBox="0 0 29 22"
+                style={{ rotate: "45deg" }}
+              >
                 <path
                   d="M25.375 6.11111V4.88889L21.75 7.33333L18.125 4.88889V6.11111L21.4117 8.33556C21.5103 8.40127 21.6258 8.43629 21.744 8.43629C21.8621 8.43629 21.9776 8.40127 22.0763 8.33556L25.375 6.11111ZM26.5833 0H2.41667C1.0875 0 0 1.1 0 2.44444V19.5556C0 20.9 1.0875 22 2.41667 22H26.5833C27.9125 22 28.9879 20.9 28.9879 19.5556L29 2.44444C29 1.1 27.9125 0 26.5833 0ZM9.66667 3.66667C11.6725 3.66667 13.2917 5.30444 13.2917 7.33333C13.2917 9.36222 11.6725 11 9.66667 11C7.66083 11 6.04167 9.36222 6.04167 7.33333C6.04167 5.30444 7.66083 3.66667 9.66667 3.66667ZM16.9167 18.3333H2.41667V17.1111C2.41667 14.6667 7.25 13.3222 9.66667 13.3222C12.0833 13.3222 16.9167 14.6667 16.9167 17.1111V18.3333ZM25.9792 11H17.5208C17.1825 11 16.9167 10.7311 16.9167 10.3889V4.27778C16.9167 3.93556 17.1825 3.66667 17.5208 3.66667H25.9792C26.3175 3.66667 26.5833 3.93556 26.5833 4.27778V10.3889C26.5833 10.7311 26.3175 11 25.9792 11Z"
                   fill="orangered"
