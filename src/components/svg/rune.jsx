@@ -5,7 +5,7 @@ export const Rune = () => {
       <h1 className="rune">Portfolio</h1>
       <div id="doodle">
         <Doodle
-          rule={`@grid: 30;
+          rule={`@grid: 16;
           @size:  2px 2px;
           background-color: rgba(255, 68, 0, 0.379);
           @place: @plot(
