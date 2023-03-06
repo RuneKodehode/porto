@@ -4,6 +4,8 @@ export const Home = () => {
       <br />
       <br />
       <br />
+      <div className="portfolio"> </div>
+
       <p className="projects">
         I`m a 33 year old front-end developer. <br /> Currently I'm well versed
         in <span style={{ color: "orangered" }}> HTML</span>,{" "}
