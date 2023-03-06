@@ -258,7 +258,7 @@ function NavBar() {
           </div>
         )}
       </div>
-      <div className="btnSpace">
+      <div className="btnSpace2">
         <a
           href="https://github.com/RuneKodehode?tab=repositories"
           target="_blank"
