@@ -173,6 +173,11 @@ h1 {
     margin-top: 50px;
     text-decoration: underline;
   }
+  .btnSpace {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
   .pitch {
     font-size: 0.875rem;
     width: 95vw;
@@ -190,6 +195,7 @@ h1 {
     margin-top: 10px;
     gap: 15px;
     height: 20vh;
+    width: 95vw;
   }
   .btnDiv {
     flex-direction: column;
@@ -213,7 +219,7 @@ h1 {
   }
   .projects {
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin: 0px 30px;
     line-height: 1.7;
     font-weight: 300;

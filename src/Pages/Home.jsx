@@ -7,8 +7,13 @@ export const Home = () => {
       <div className="portfolio"> </div>
 
       <p className="projects">
-        I`m a 33 year old front-end developer. <br /> Currently I'm well versed
-        in <span style={{ color: "orangered" }}> HTML</span>,{" "}
+        I`m a 33 year old front-end developer. <br />
+        <br />
+        I'm currently participating in a front-end developer course hosted by
+        Jobloop in Stavanger.
+        <br />
+        <br /> Currently I'm well versed in{" "}
+        <span style={{ color: "orangered" }}> HTML</span>,{" "}
         <span style={{ color: "orangered" }}>CSS</span>,{" "}
         <span style={{ color: "orangered" }}>Javascript</span>,{" "}
         <span style={{ color: "orangered" }}>Figma</span> and
