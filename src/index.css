@@ -50,10 +50,11 @@ h1 {
 }
 .projects {
   text-align: left;
-  margin: 0 180px;
+  margin: auto;
   line-height: 1.4;
   font-weight: 300;
   font-size: 1.5rem;
+  width: 40vw;
 }
 .p2 {
   padding: 40px;
@@ -230,7 +231,8 @@ h1 {
   .projects {
     text-align: left;
     font-size: 0.75rem;
-    margin: 0px 30px;
+    margin: auto;
+    width: 70vw;
     line-height: 1.7;
     font-weight: 300;
   }
