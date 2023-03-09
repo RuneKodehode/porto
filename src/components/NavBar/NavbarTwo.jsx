@@ -2,7 +2,10 @@ import { AiFillGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
 function NavBarTwo() {
   return (
-    <div className="flex flex-col h-10 w-20 text-white" id="contact">
+    <div
+      className="flex flex-col justify-center self-center h-10 w-auto text-white sm:flex-row"
+      id="contact"
+    >
       <a
         href="https://github.com/RuneKodehode?tab=repositories"
         target="_blank"

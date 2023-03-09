@@ -4,81 +4,30 @@
 
 body {
   font-family: "Cinzel", serif;
-  background-image: url(./components/svg/desert.webp);
+  /* background-image: url(./components/svg/desert.webp); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.519);
+  background-color: rgba(0, 0, 0, 0.9);
   background-blend-mode: overlay;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 iframe {
   width: 60vw;
-  height: 65vh;
+  height: 80vh;
   border-radius: 20px;
+  justify-self: center;
+  align-self: center;
 }
 css-doodle {
   width: 60vw;
 }
 
-#pitch {
-  grid-column: col-two;
-  grid-row: two;
-}
-#navbar {
-  grid-row: one;
-  grid-column: col-one;
-}
-::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
-#contact {
-  grid-row: one;
-  grid-column: col-three;
-}
-#portfolio {
-  grid-row: one;
-  grid-column: col-two;
-}
-
-#header {
-  display: grid;
-  min-height: 100vh;
-  width: 100vw;
-  grid-template-columns: [col-one] 25% [col-two] 50% [col-three] 25%;
-  grid-template-rows: [one] 160px [two] auto [three] 40%;
-}
-
-@media only screen and (max-width: 1250px) {
-  #pitch {
-    width: 90vw;
-  }
-  #doodle {
-    margin: 0px 0px 0px 0px;
-  }
-  #navbar {
-    grid-row: three;
-    grid-column: col-one;
-    flex-direction: row;
-    align-self: start;
-    justify-self: start;
-    margin-top: 10px;
-  }
-  #contact {
-    grid-row: one;
-    grid-column: col-three;
-    align-self: center;
-    justify-self: center;
-  }
+@media only screen and (max-width: 600px) {
   iframe {
     justify-self: center;
     align-self: center;
-    grid-column: col-two;
-    grid-row: two;
+
     width: 100%;
     height: 55vh;
   }

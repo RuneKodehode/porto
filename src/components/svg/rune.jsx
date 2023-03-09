@@ -2,13 +2,13 @@ import Doodle from "../../doodle";
 export const Rune = () => {
   return (
     <div
-      className="flex flex-col self-center justify-self-center w-100"
+      className="self-center justify-self-center w-100 grid row-start-1 col-start-2"
       id="portfolio"
     >
       <h1 className="self-center justify-self-center text-center  text-4xl mb-6">
         Portfolio
       </h1>
-      <div id="doodle">
+      <div id="doodle" className="min-w-full">
         <Doodle
           rule={`@grid: 20;
           @size:  2px 2px;
