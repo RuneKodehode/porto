@@ -2,7 +2,7 @@ export const Home = () => {
   return (
     <div className="text-white text-l space-y-5">
       <div>
-        I`m a 33 year old front-end developer. I'm currently participating in a
+        I'm a 33 year old front-end developer. I'm currently participating in a
         front-end developer course hosted by Jobloop in Stavanger.{" "}
       </div>
       <div>
