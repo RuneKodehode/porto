@@ -1,5 +1,5 @@
 import { NavBar } from "./components/NavBar/NavBar.jsx";
-import { NavBarTwo } from "./components/NavBar/navbarTwo.jsx";
+import { NavBarTwo } from "./components/NavBar/NavbarTwo.jsx";
 import { Home } from "./Pages/Home";
 import { ProjectOne } from "./Pages/ProjectOne";
 import { ProjectTwo } from "./Pages/ProjectTwo";
