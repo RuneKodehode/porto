@@ -24,9 +24,12 @@ h2 {
   font-size: 2.5rem;
   text-decoration: underline;
 }
+
 .pitch {
-  justify-self: center;
   align-self: center;
+  justify-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
   font-family: "Heebo";
   grid-column: col-two;
   grid-row: two;
@@ -40,6 +43,11 @@ h1 {
   text-align: center;
   color: white;
 }
+.flavourText {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
@@ -49,21 +57,30 @@ h1 {
   padding: 0;
 }
 .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+
   text-align: left;
   margin: auto;
   line-height: 1.4;
   font-weight: 300;
   font-size: 1.5rem;
   width: 40vw;
+  height: 50vh;
 }
 .p2 {
   padding: 40px;
   text-align: center;
 }
 .portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
   grid-row: one;
   grid-column: col-two;
-  justify-self: center;
   align-self: flex-end;
   font-size: 1.875rem;
 }
