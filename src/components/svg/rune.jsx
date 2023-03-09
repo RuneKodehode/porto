@@ -1,31 +1,38 @@
 import Doodle from "../../doodle";
 export const Rune = () => {
   return (
-    <div className="portfolio">
-      <h1 className="rune">Portfolio</h1>
+    <div
+      className="flex flex-col self-center justify-self-center w-100"
+      id="portfolio"
+    >
+      <h1 className="self-center justify-self-center text-center  text-4xl mb-6">
+        Portfolio
+      </h1>
       <div id="doodle">
         <Doodle
           rule={`@grid: 20;
-          @size:  3px 3px;
-          background-color: rgba(255, 68, 0, 0.379);
+          @size:  2px 2px;
+          background-color: white;
           @place: @plot(
             r: sin(-t/2);
             move: 0 -.2;
             rotate: 90;
           );
-            box-shadow: 2px 2px 5px orangered;
+            box-shadow: 2px 2px 5px cyan;
             animation: m 4s alternate-reverse infinite;
-            transform: translateY(calc(@sin(@i / 1) * π * 14px));
+            transform: translateY(calc(@sin(@i / 1) * π * 16px));
             animation-delay: calc(
              -1s/@I * @i * @sin(@i)
              );
              @keyframes m {
-               20%, 70%, 100% { scale: 1; opacity: 1}
-              20%, 30%, 80% { scale: 0; opacity: 0;}
+               15%, 70%, 70% { scale: 1; opacity: 1}
+              04%, 60%, 100% { scale: 0; opacity: 0;}
               `}
         ></Doodle>{" "}
       </div>
-      <h1 className="rune">Rune</h1>
+      <h1 className="w-auto self-center justify-self-center text-center  text-4xl mt-6">
+        Rune
+      </h1>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { NavBar } from "./components/NavBar/NavBar.jsx";
-import { Icons } from "./components/Icons/Icons.jsx";
+import { NavBarTwo } from "./components/NavBar/navbar2.jsx";
 import { Home } from "./Pages/Home";
 import { ProjectOne } from "./Pages/ProjectOne";
 import { ProjectTwo } from "./Pages/ProjectTwo";
@@ -15,10 +15,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div id="header">
+        <div id="header" className="">
           <Rune />
           <NavBar />
-          <div className="pitch">
+          <NavBarTwo />
+          <div
+            className="self-center justify-self-center  text-center "
+            id="pitch"
+          >
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/ProjectOne" element={<ProjectOne />} />
@@ -38,7 +42,6 @@ function App() {
               />
             </Routes>
           </div>
-          <Icons />
         </div>
       </Router>
     </div>

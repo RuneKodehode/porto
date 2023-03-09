@@ -1,13 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   font-family: "Cinzel", serif;
-  color: orangered;
-  margin: 0px;
   background-image: url(./components/svg/desert.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.698);
+  background-color: rgba(0, 0, 0, 0.519);
   background-blend-mode: overlay;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 iframe {
   width: 60vw;
@@ -15,245 +21,58 @@ iframe {
   border-radius: 20px;
 }
 css-doodle {
-  width: 40vw;
-}
-h2 {
-  color: orangered;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 2.5rem;
-  text-decoration: underline;
+  width: 60vw;
 }
 
-.pitch {
-  align-self: center;
-  justify-self: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  font-family: "Heebo";
+#pitch {
   grid-column: col-two;
   grid-row: two;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  width: 60vw;
-  height: 60vh;
-  border-radius: 10px;
 }
-h1 {
-  text-align: center;
-  color: white;
-}
-.flavourText {
-  display: flex;
-  align-self: center;
-  justify-self: center;
+#navbar {
+  grid-row: one;
+  grid-column: col-one;
 }
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-* {
-  margin: 0;
-  padding: 0;
+#contact {
+  grid-row: one;
+  grid-column: col-three;
 }
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: center;
-
-  text-align: left;
-  margin: auto;
-  line-height: 1.4;
-  font-weight: 300;
-  font-size: 1.5rem;
-  width: 40vw;
-  height: 50vh;
-}
-.p2 {
-  padding: 40px;
-  text-align: center;
-}
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
+#portfolio {
   grid-row: one;
   grid-column: col-two;
-  align-self: flex-end;
-  font-size: 1.875rem;
 }
 
 #header {
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   grid-template-columns: [col-one] 25% [col-two] 50% [col-three] 25%;
-  grid-template-rows: [one] 230px [two] auto [three] 20%;
-}
-.btnSpace {
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
-}
-.btnSpace2 {
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
-}
-#navId {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: auto;
-  grid-column: col-one;
-  grid-row: two;
-  justify-self: center;
-  justify-content: space-between;
-  background-position: center;
-  width: 90vw;
-  height: 54vh;
-
-  background-size: cover;
-}
-
-.navBtn {
-  background-color: black;
-  font-size: 0.85rem;
-  font-weight: 600;
-  width: 55px;
-  height: 55px;
-  justify-self: flex-start;
-  align-self: center;
-  color: orangered;
-  border: 2px solid orangered;
-  filter: drop-shadow(0px 0px 5px orangered);
-}
-.navBtn:focus {
-  transition: 1.4s;
-  filter: drop-shadow(0px 0px 20px orangered) invert(100%);
-}
-.btnDiv {
-  display: flex;
-  align-items: row;
-  rotate: 45deg;
-}
-.projBtn:hover {
-  cursor: pointer;
-}
-.navBtn:hover {
-  cursor: pointer;
-  border: 2px solid black;
-}
-.navBtn:active {
-}
-
-#icons {
-  display: flex;
-  justify-self: center;
-  align-self: center;
-  grid-column: col-two;
-  grid-row: three;
-  justify-content: space-between;
-  width: 80%;
-  z-index: 1;
-}
-.icon {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 10px black;
-  border-radius: 5px;
-  padding: 2px;
-  width: 40px;
-  height: 40px;
-  justify-content: space-between;
-  transition: 0.1s ease-in-out;
-}
-.icon:hover {
-  cursor: pointer;
-  transform: translateY(10px);
-}
-#contact {
-  margin-top: 100px;
+  grid-template-rows: [one] 160px [two] auto [three] 40%;
 }
 
 @media only screen and (max-width: 1250px) {
-  body {
-    margin: 0px;
-    padding: 0px;
-  }
-  css-doodle {
-    width: 70vw;
-  }
-  #header {
-    grid-template-rows: [one] 21% [two] auto [three] auto;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 1.875rem;
-    margin-top: 50px;
-    text-decoration: underline;
-  }
-  .btnSpace {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-  }
-  .btnSpace2 {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    margin-bottom: -50px;
-  }
-  .pitch {
-    font-size: 0.875rem;
-    width: 95vw;
-    height: 50vh;
-    grid-row: two;
-    grid-column: col-one / span 3;
-  }
-
-  #navId {
-    flex-direction: row;
-    grid-row: three;
-    grid-column: col-two;
-    justify-self: center;
-    align-self: flex-start;
-    margin-top: 10px;
-    justify-content: center;
-    gap: 25px;
-    height: 20vh;
+  #pitch {
     width: 90vw;
-  }
-  .btnDiv {
-    flex-direction: column;
-  }
-
-  .navBtn {
-    font-size: 0.625rem;
-    font-weight: 600;
-    width: 38px;
-    height: 38px;
-  }
-  #icons {
-    visibility: hidden;
-  }
-  #linebreak {
-    width: 100vw;
-    text-align: center;
   }
   #doodle {
     margin: 0px 0px 0px 0px;
   }
-  .projects {
-    text-align: left;
-    font-size: 0.75rem;
-    margin: auto;
-    width: 70vw;
-    line-height: 1.7;
-    font-weight: 300;
+  #navbar {
+    grid-row: three;
+    grid-column: col-one;
+    flex-direction: row;
+    align-self: start;
+    justify-self: start;
+    margin-top: 10px;
+  }
+  #contact {
+    grid-row: one;
+    grid-column: col-three;
+    align-self: center;
+    justify-self: center;
   }
   iframe {
     justify-self: center;
@@ -261,6 +80,6 @@ h1 {
     grid-column: col-two;
     grid-row: two;
     width: 100%;
-    height: 54vh;
+    height: 55vh;
   }
 }

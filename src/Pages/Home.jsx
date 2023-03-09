@@ -1,6 +1,6 @@
 export const Home = () => {
   return (
-    <p className="projects">
+    <div className="text-white text-l space-y-5">
       <div>
         I`m a 33 year old front-end developer. I'm currently participating in a
         front-end developer course hosted by Jobloop in Stavanger.{" "}
@@ -20,6 +20,6 @@ export const Home = () => {
         years, and my hobbies include reading books, watching football,{" "}
         <span style={{ color: "red" }}> D&D</span> and PC-games.
       </div>
-    </p>
+    </div>
   );
 };
