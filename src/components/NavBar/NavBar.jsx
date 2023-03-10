@@ -13,7 +13,7 @@ function NavBar() {
 
         <Link
           to="/"
-          className="w-16 h-12 sm:w-32 text-black border-black border-2 bg-orange-600 rounded-lg flex"
+          className="w-16 h-12 sm:w-32 text-black border-none border bg-orange-600 rounded-lg flex hover:bg-orange-500 active:animate-ping"
         >
           <button aria-label="Home button" className="w-full h-full">
             <BiHomeAlt2 className="w-10 h-10 sm:w-32" />
@@ -21,7 +21,7 @@ function NavBar() {
         </Link>
         <button
           to="/menu"
-          className="border-2 border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs py-3 bg-orange-800 sm:w-32  sm:h-auto sm:text-lg"
+          className="border w-16 h-12 rounded-lg text-white text-center  text-xs bg-orange-700 sm:w-32  sm:h-auto sm:text-lg hover:bg-orange-500 active:animate-ping"
           aria-label="open or close the navigation menu"
           onClick={() => {
             setShowNav(!showNav);
@@ -35,7 +35,7 @@ function NavBar() {
             <Link to="/ProjectOne" className="w-32">
               <button
                 aria-label="Parallax text button"
-                className="border-2 border-white-300 w-16 h-10 rounded-lg text-white text-center  text-xs sm:w-32  sm:h-auto sm:text-lg"
+                className="border w-16 h-12 rounded-lg text-white text-center  text-xs bg-orange-900 sm:w-32  sm:h-auto sm:text-lg hover:bg-orange-500 active:animate-ping"
                 onClick={() => {
                   setHideClose((prevHideClose) =>
                     prevHideClose !== 1 ? 1 : 0
@@ -52,7 +52,7 @@ function NavBar() {
               className="flex flex-col w-16"
             >
               <Link to="/AboutProjOne" className="w-auto h-auto">
-                <button className="border-2 border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg">
+                <button className="border border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg">
                   info
                 </button>
               </Link>
@@ -64,7 +64,7 @@ function NavBar() {
               >
                 <button
                   aria-label="Button to Parallax Github"
-                  className="border-2 border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg"
+                  className="border border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg"
                 >
                   Github
                 </button>
@@ -77,7 +77,7 @@ function NavBar() {
             <Link to="/ProjectTwo" className="">
               <button
                 aria-label="Pokedex text button"
-                className="order-solid border-2 border-white-300 w-16 h-10 rounded-lg text-white text-center  text-xs sm:w-32  sm:h-auto sm:text-lg"
+                className="border w-16 h-12 rounded-lg text-white text-center  text-xs bg-orange-900 sm:w-32  sm:h-auto sm:text-lg hover:bg-orange-500 active:animate-ping"
                 id="pokedexBtn"
                 onClick={() => {
                   setHideClose((prevHideClose) =>
@@ -94,7 +94,7 @@ function NavBar() {
               <Link to="/AboutProjTwo" className="w-auto h-auto ">
                 <button
                   aria-label="show Pokedex"
-                  className="border-2 border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg"
+                  className="border border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg"
                 >
                   info
                 </button>
@@ -107,7 +107,7 @@ function NavBar() {
               >
                 <button
                   aria-label="Link to Pokedex Github"
-                  className="border-2 border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg"
+                  className="border border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg"
                 >
                   Github
                 </button>
@@ -121,7 +121,7 @@ function NavBar() {
               <button
                 aria-label="Button to show Breakout text"
                 id="breakout"
-                className=" order-solid border-2 border-white-300 w-16 h-10 rounded-lg text-white text-center  text-xs sm:w-32  sm:h-auto sm:text-lg"
+                className="border w-16 h-12 rounded-lg text-white text-center  text-xs bg-orange-900 sm:w-32  sm:h-auto sm:text-lg hover:bg-orange-500 active:animate-ping"
                 onClick={() => {
                   setHideClose((prevHideClose) =>
                     prevHideClose !== 3 ? 3 : 0
@@ -137,7 +137,7 @@ function NavBar() {
               <Link to="/AboutBreakout" className="w-auto h-auto ">
                 <button
                   aria-label="Button to Play Breakout"
-                  className="border-2 border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg"
+                  className="border border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg"
                 >
                   info
                 </button>
@@ -149,7 +149,7 @@ function NavBar() {
               >
                 <button
                   aria-label="Button to Breakout Github link"
-                  className="border-2 border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg"
+                  className="border border-blue-300 w-16 h-10 rounded-lg text-white text-center  text-xs bg-slate-800 sm:w-32  sm:h-auto sm:text-lg"
                 >
                   Github
                 </button>

@@ -1,6 +1,6 @@
 export const Contact = () => {
   return (
-    <div id="contact">
+    <div className=" text-white sm:text-2xl space-y-5 w-auto sm:w-96 self-start mt-32 ml-auto mr-auto justify-self-center text-left">
       <h3 className="projects">
         {" "}
         Tlf: <span style={{ color: "orangered" }}>+47 91992120</span>

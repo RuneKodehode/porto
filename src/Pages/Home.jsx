@@ -1,6 +1,6 @@
 export const Home = () => {
   return (
-    <div className=" text-white text-l space-y-5  sm:h-1/2 sm:w-3/4 flex-col justify-self-center self-center">
+    <div className=" text-white sm:text-2xl space-y-5 w-auto sm:w-11/12 self-start mt-32 ml-auto mr-auto justify-self-center text-left">
       <p>
         I'm a 33 year old front-end developer. I'm currently participating in a
         front-end developer course hosted by Jobloop in Stavanger.{" "}

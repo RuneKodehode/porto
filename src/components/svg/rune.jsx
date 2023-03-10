@@ -2,7 +2,7 @@ import Doodle from "../../doodle";
 export const Rune = () => {
   return (
     <div
-      className="flex flex-col gap-4 self-center justify-self-center w-100  row-start-1 text-center col-start-2 font-bold text-white sm:text-5xl text-2xl"
+      className="flex flex-col gap-0 self-center justify-self-center w-100  row-start-1 text-center col-start-2 font-bold text-white sm:text-5xl text-2xl"
       id="portfolio"
     >
       <h1 className="self-center justify-self-center text-center">Portfolio</h1>
