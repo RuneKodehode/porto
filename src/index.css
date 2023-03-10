@@ -4,11 +4,11 @@
 
 body {
   font-family: "Cinzel", serif;
-  /* background-image: url(./components/svg/desert.webp); */
+  background-image: url(./components/svg/desert.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.353);
   background-blend-mode: overlay;
 }
 

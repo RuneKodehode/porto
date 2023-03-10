@@ -2,12 +2,10 @@ import Doodle from "../../doodle";
 export const Rune = () => {
   return (
     <div
-      className="self-center justify-self-center w-100 grid row-start-1 col-start-2"
+      className="flex flex-col gap-4 self-center justify-self-center w-100  row-start-1 text-center col-start-2 font-bold text-white sm:text-5xl text-2xl"
       id="portfolio"
     >
-      <h1 className="self-center justify-self-center text-center  text-4xl mb-6">
-        Portfolio
-      </h1>
+      <h1 className="self-center justify-self-center text-center">Portfolio</h1>
       <div id="doodle" className="min-w-full">
         <Doodle
           rule={`@grid: 20;
@@ -30,9 +28,7 @@ export const Rune = () => {
               `}
         ></Doodle>{" "}
       </div>
-      <h1 className="w-auto self-center justify-self-center text-center  text-4xl mt-6">
-        Rune
-      </h1>
+      <h1 className="">Rune</h1>
     </div>
   );
 };

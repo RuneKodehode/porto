@@ -8,12 +8,15 @@ function NavBar() {
 
   return (
     <div className="grid row-start-3 col-start-1 sm:row-start-1 sm:col-start-1">
-      <div className="flex flex-row max-h-fit sm:flex-col" id="navbar">
+      <div className="flex flex-row sm:flex-col" id="navbar">
         {/* here we have a div with a <link> that navigates to the default homepage of the site. within the button you see an svg that represents a house on the button itself.  */}
 
-        <Link to="/" className="w-10 h-10 ">
+        <Link
+          to="/"
+          className="w-16 h-12 sm:w-32 text-black border-black border-2 bg-orange-600 rounded-lg flex"
+        >
           <button aria-label="Home button" className="w-full h-full">
-            <BiHomeAlt2 className="w-10 h-10 " />
+            <BiHomeAlt2 className="w-10 h-10 sm:w-32" />
           </button>
         </Link>
         <button

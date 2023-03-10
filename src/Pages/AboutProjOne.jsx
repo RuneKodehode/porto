@@ -1,6 +1,6 @@
 export const AboutProjOne = () => {
   return (
-    <div className="flavourText projects">
+    <div className=" text-white text-l space-y-5  sm:h-1/2 sm:w-3/4 flex-col justify-self-center self-center">
       <h2>Parallax</h2>
       <br />
       <p>

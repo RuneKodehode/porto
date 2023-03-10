@@ -15,31 +15,29 @@ function App() {
   return (
     <div>
       <Router>
-        <div className="grid grid-rows-[150px_minmax(5px,_1fr)_200px] grid-cols-3 w-screen h-screen">
+        <div className="grid grid-rows-[150px_minmax(5px,_1fr)_150px] grid-cols-[7%_minmax(5px,_2fr)_7%] sm:grid-cols-[15%_minmax(5px,_2fr)_15%] w-screen h-screen">
           <Rune />
           <NavBar />
           <NavBarTwo />
-          <div className="row-start-2 col-start-1 col-span-3 mb-32">
-            <div className="w-full ">
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/ProjectOne" element={<ProjectOne />} />
-                <Route path="/ProjectTwo" element={<ProjectTwo />} />
-                <Route path="/AboutProjOne" element={<AboutProjOne />} />
-                <Route path="/AboutProjTwo" element={<AboutProjTwo />} />
-                <Route path="/AboutBreakout" element={<AboutBreakout />} />
-                <Route path="/Contact" element={<Contact />} />
-                <Route path="/Breakout" element={<Breakout />} />
-                <Route
-                  path="*"
-                  element={
-                    <div>
-                      <h1>404</h1> <p>Page not found</p>
-                    </div>
-                  }
-                />
-              </Routes>
-            </div>
+          <div className="grid row-start-2 col-start-1 col-span-3 sm:col-span-1 mb-32 sm:col-start-2 h-full w-full">
+            <Routes className="flex">
+              <Route path="/" element={<Home />} />
+              <Route path="/ProjectOne" element={<ProjectOne />} />
+              <Route path="/ProjectTwo" element={<ProjectTwo />} />
+              <Route path="/AboutProjOne" element={<AboutProjOne />} />
+              <Route path="/AboutProjTwo" element={<AboutProjTwo />} />
+              <Route path="/AboutBreakout" element={<AboutBreakout />} />
+              <Route path="/Contact" element={<Contact />} />
+              <Route path="/Breakout" element={<Breakout />} />
+              <Route
+                path="*"
+                element={
+                  <div>
+                    <h1>404</h1> <p>Page not found</p>
+                  </div>
+                }
+              />
+            </Routes>
           </div>
         </div>
       </Router>
