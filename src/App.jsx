@@ -15,11 +15,11 @@ function App() {
   return (
     <div className="">
       <Router>
-        <div className="grid sm:grid-rows-[15%_minmax(150px,_auto)_20px] grid-rows-[15%_minmax(150px,_auto)_150px] grid-cols-[7%_minmax(5px,_2fr)_7%] sm:grid-cols-[16%_minmax(5px,_2fr)_16%]  h-screen">
+        <div className="">
           <Rune />
           <NavBar />
           <NavBarTwo />
-          <div className="grid row-start-2 col-start-1 col-span-3 sm:col-span-1 sm:col-start-2 pb-2.5">
+          <div className="">
             <Routes className="flex">
               <Route path="/" element={<Home />} />
               <Route path="/ProjectOne" element={<ProjectOne />} />
