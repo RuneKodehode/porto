@@ -1,14 +1,14 @@
 import { NavBar } from "./components/NavBar/NavBar.jsx";
 import { NavBarTwo } from "./components/NavBar/NavbarTwo.jsx";
-import { Home } from "./Pages/Home";
-import { ProjectOne } from "./Pages/ProjectOne";
-import { ProjectTwo } from "./Pages/ProjectTwo";
-import { AboutProjOne } from "./Pages/AboutProjOne.jsx";
-import { AboutProjTwo } from "./Pages/AboutProjTwo.jsx";
-import { AboutBreakout } from "./Pages/AboutBreakout.jsx";
-import { Breakout } from "./Pages/Breakout.jsx";
+import { Home } from "./components/Pages/Home";
+import { ProjectOne } from "./components/Pages/ProjectOne";
+import { ProjectTwo } from "./components/Pages/ProjectTwo";
+import { AboutProjOne } from "./components/Pages/AboutProjOne.jsx";
+import { AboutProjTwo } from "./components/Pages/AboutProjTwo.jsx";
+import { AboutBreakout } from "./components/Pages/AboutBreakout.jsx";
+import { Breakout } from "./components/Pages/Breakout.jsx";
 import { Rune } from "./components/svg/rune.jsx";
-import { Contact } from "./Pages/Contact.jsx";
+import { Contact } from "./components/Pages/Contact.jsx";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
