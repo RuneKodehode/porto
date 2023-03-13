@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "homepage": "https://runekodehode.github.io/porto/",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
