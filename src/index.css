@@ -8,7 +8,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.792);
+  background-color: rgba(0, 0, 0, 0.695);
   background-blend-mode: overlay;
 }
 body::-webkit-scrollbar {
